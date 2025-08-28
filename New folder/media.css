@@ -1,0 +1,739 @@
+@media all and (min-width:320px) and (max-width:700px) {
+  header{
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 25px;
+  }
+  header nav{
+    padding: 0 20px;
+    height: 45px;
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    background: linear-gradient(135deg, #826851, #A68D77);
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    text-align: start;
+    z-index: 1000;
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+    transition: 0.7s;
+  }
+  header nav ul li a{
+    color: #fff;
+  }
+  .bars{
+    display: block;
+    color: #fff;
+    font-size: 23px;
+  }
+  .bars1{
+    color: #000;
+  }
+  /* ============== hero section ===============  */
+  .hero{
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+    margin-top: 45px;
+  }
+  .hero_image{
+    flex-basis: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .hero_image img {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+  }
+  .hero_text{
+    padding: 0 20px;
+  }
+  .hero_text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero_text h2{
+    font-size: 25px;
+  }
+  .hero_text button {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  /* ================== my service section =====================  */
+  .service {
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 10px 20px 30px;
+  }
+  .service_text h1 {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  .service_text p {
+    font-size: 14px;
+  }
+  .service_text p~ul{
+    padding-left: 25px;
+  }
+  /* ================ my client section =============  */
+  .client_section{
+    width: 100%;
+    height: 1500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 0%;
+    position: relative;
+  }
+  .client_left_part_image{
+    transform: scale(70%) translateX(-75px);
+    width: 350px;
+    margin: -55px auto;
+  }
+  .client_left_part{
+    width: 100%;
+    padding: 0%;
+  }
+  .client_left_part h2{
+    width: 380px;
+    font-size: 20px;
+    padding: 0 10px;
+    padding-right: 30px;
+  }
+  .client_left_part p{
+    font-size: 14px;
+    padding: 0 20px;
+    width: 380px;
+    margin: auto;
+  }
+  .client_left_part_bottom{
+    flex-wrap: wrap;
+    width: 350px;
+    height: 120px;
+    margin: auto;
+    align-items:center ;
+    justify-content: center;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .client_left_part_bottom::after{
+    width: 346px;
+    height: 116px;
+  }
+  .client_left_part_bottom h4{
+    margin: 0;
+  }
+  /* ============== some service section ==============  */
+  #about{
+    width: 100%;
+    padding: 0;
+  }
+  .abouts{
+    font-size: 25px;
+    margin: -220px auto 130px;
+  }
+  .image{
+    transform: scale(45%);
+    margin-top: -235px;
+    margin-bottom: -150px;
+  }
+  .about_text{
+    padding: 20px;
+  }
+  .about_text h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .about_text p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .about_text p~ul{
+    padding-left: 25px;
+    font-size: 14px;
+  }
+  /* =================== testimonial ===============  */
+  .Testimonials{
+    font-size: 23px;
+    margin: 20px auto 0px;
+  }
+  .testimonial{
+    width: 100%;
+    flex-direction: column;
+    height: 1200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .left_testimonial{
+    transform: scale(70%);
+    width: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left_testimonial_image:nth-child(2){
+    left: -240px;
+  }
+  .left_testimonial_image:nth-child(3){
+    left: -130px;
+  }
+  .right_testimonial{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0px;
+    padding:0 20px ;
+    justify-content: center;
+  }
+  .client_info{
+    width: 100%;
+    margin: 30px auto 0px;
+    
+  }
+  .left_right_btn{
+    margin-left: 0px;
+  }
+  .right_testimonial h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .right_testimonial span {
+    font-size: 13px;
+    text-align: center;
+  }
+  #text {
+    display: block;
+    height: auto;
+  }
+  .right_testimonial p {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    position: unset;
+    margin:30px auto 0;
+  }
+  #testi_point{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    position: unset;
+    margin-top: 10px;
+  }
+  .testi_btn{
+    position: unset;
+    display: inline-block;
+    margin: 20px auto 0
+  }
+  .testi_btn2{
+    margin: 10px auto 0;
+  }
+   /* ===================== some client feedback ===================  */
+  .feedback_hadeline{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .feedback{
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: -20px;
+  }
+  #right_feedback img:nth-child(1){
+    width: 100%;
+    height: 110px;
+  }
+  #right_feedback img:nth-child(2){
+    width: 100%;
+    height: 75px;
+  }
+  #right_feedback img:nth-child(3){
+    width: 100%;
+    height: 100px;
+  }
+  /* ============== ============ contact section =================  */
+  .contact_header_text{
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+  .contact{
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .left_contact, .right_contact{
+    width: 100%;
+  }
+  .right_contact p{
+    position: unset;
+    font-size: 20px;
+    text-align: center;
+  }
+  .right_contact p span{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+  }
+  /* ===================== footer ====================  */
+  .main_footer {
+    width: 100%;
+    height: 800px;
+  }
+  .footer {
+    width: 100%;
+    flex-direction: column;
+    height: 1000px;
+    gap: 0;
+  }
+  .footer_left{
+    margin-top: 100px;
+  }
+  .footer_left h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .footer_left p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer_mid ul{
+    margin: 0;
+  }
+  .footer_right {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .social{
+    justify-content: center;
+  }
+
+  /* ============= last footer ===============  */
+  .last_footer{
+    width: 100%;
+    margin: -70px auto 0px;
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width:701px) and (max-width: 1200px){
+  header{
+    width: 100%;
+    border-radius: 0;
+    padding-bottom: 25px;
+  }
+  header nav{
+    padding: 0 20px;
+    height: 45px;
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+    background: linear-gradient(135deg, #826851, #A68D77);
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    text-align: start;
+    z-index: 1000;
+    align-items: start;
+    justify-content: start;
+    padding: 30px;
+    transition: 0.7s;
+  }
+  header nav ul li a{
+    color: #fff;
+  }
+  .bars{
+    display: block;
+    color: #fff;
+    font-size: 23px;
+  }
+  .bars1{
+    color: #000;
+  }
+  /* ============== hero section ===============  */
+  .hero{
+    padding: 0;
+    padding-left: 20px;
+    gap: 10px;
+    margin-top: 45px;
+  }
+  .hero_image{
+    flex-basis: 100%;
+    width: 100%;
+    border-radius: 30px;
+  }
+  .hero_image img {
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+  }
+  .hero_text{
+    padding: 0 20px;
+  }
+  .hero_text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .hero_text h2{
+    font-size: 25px;
+  }
+  .hero_text button {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  /* ================== my service section =====================  */
+  .service {
+    width: 100%;
+    padding: 10px 20px 30px;
+  }
+  .service_text h1 {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  .service_text p {
+    font-size: 14px;
+  }
+  .service_text p~ul{
+    padding-left: 25px;
+  }
+  /* ================ my client section =============  */
+  .client_section{
+    width: 700px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0%;
+    position: relative;
+    margin:30px auto 60px;
+  }
+  .client_left_part_image{
+    transform: scale(70%) translateX(-75px);
+    width: 350px;
+    margin: -55px auto;
+  }
+  .client_left_part{
+    height: auto;
+    width: 100%;
+    flex-basis: 50%;
+    padding: 0%;
+  }
+  .client_right_part{
+    flex-basis: 50%;
+    width: 100%;
+    padding: 0;
+  }
+  .client_left_part h2{
+    width: 380px;
+    font-size: 20px;
+    padding: 0 10px;
+    padding-right: 30px;
+  }
+  .client_left_part p{
+    font-size: 14px;
+    padding: 0 20px;
+    width: 380px;
+    margin: auto;
+  }
+  .client_left_part_bottom{
+    flex-wrap: wrap;
+    width: 350px;
+    height: 120px;
+    margin: auto;
+    align-items:center ;
+    justify-content: center;
+    gap: 0;
+    margin-top: 30px;
+  }
+  .client_left_part_bottom::after{
+    width: 346px;
+    height: 116px;
+  }
+  .client_left_part_bottom h4{
+    margin: 0;
+  }
+  /* ============== some service section ==============  */
+  #about{
+    width: 100%;
+    padding: 0;
+  }
+  .abouts{
+    font-size: 25px;
+    margin: 0px auto 130px;
+  }
+  .image{
+    transform: scale(45%);
+    margin-top: -235px;
+    margin-bottom: -150px;
+  }
+  .about_text{
+    padding: 20px;
+  }
+  .about_text h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .about_text p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .about_text p~ul{
+    padding-left: 25px;
+    font-size: 14px;
+  }
+  /* =================== testimonial ===============  */
+  .Testimonials{
+    font-size: 23px;
+    margin: 20px auto 100px;
+  }
+  .testimonial{
+    width: 100%;
+    flex-direction: column;
+    height : auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .left_testimonial{
+    transform: scale(70%);
+    width: 100%;
+    height: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left_testimonial_image:nth-child(2){
+    left: 50%;
+    margin-left: -250px;
+  }
+  .left_testimonial_image:nth-child(3){
+    left: 50%;
+    margin-left: -140px;
+  }
+  .right_testimonial{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 420px;
+    padding:0 20px ;
+    justify-content: center;
+  }
+  .client_info{
+    width: 100%;
+    margin: 30px auto 0px;
+    
+  }
+  .left_right_btn{
+    margin-left: 0px;
+  }
+  .right_testimonial h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .right_testimonial span {
+    font-size: 13px;
+    text-align: center;
+  }
+  #text {
+    display: block;
+    height: auto;
+  }
+  .right_testimonial p {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    position: unset;
+    margin:30px auto 0;
+  }
+  #testi_point{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    position: unset;
+    margin-top: 10px;
+  }
+  .testi_btn{
+    position: unset;
+    display: inline-block;
+    margin: 20px auto 0
+  }
+  .testi_btn2{
+    margin: 10px auto 0;
+  }
+   /* ===================== some client feedback =================== 
+  .feedback_hadeline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feedback{
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: -20px;
+  }
+  #right_feedback img:nth-child(1){
+    width: 100%;
+    height: 250px;
+  }
+  #right_feedback img:nth-child(2){
+    width: 100%;
+    height: 170px;
+  }
+  #right_feedback img:nth-child(3){
+    width: 100%;
+    height: 200px;
+  } */
+  /* ============== ============ contact section =================  */
+  .contact_header_text{
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+  .contact{
+    width: 100%;
+    margin-top: 30px;
+  }
+  .left_contact, .right_contact{
+    width: 100%;
+  }
+  .right_contact p{
+    position: unset;
+    font-size: 20px;
+    text-align: center;
+  }
+  .right_contact p span{
+    font-size: 30px;
+    text-align: center;
+    display: block;
+  }
+  /* ===================== footer ====================  */
+  .main_footer {
+    width: 100%;
+    height: 500px;
+  }
+  .footer {
+    width: 100%;
+    flex-direction: column;
+    height: 700px;
+    gap: 0;
+  }
+  .footer_left{
+    margin-top: -100px;
+  }
+  .footer_left h2{
+    font-size: 25px;
+    text-align: center;
+  }
+  .footer_left p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer_mid ul{
+    margin: 0;
+  }
+  .footer_right {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .social{
+    justify-content: center;
+  }
+
+  /* ============= last footer ===============  */
+  .last_footer{
+    width: 100%;
+    margin: -70px auto 0px;
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width:701px) and (max-width: 820px){
+     /* ===================== some client feedback ===================  */
+  .feedback_hadeline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feedback{
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: -20px;
+  }
+  #right_feedback img:nth-child(1){
+    width: 100%;
+    height: 250px;
+  }
+  #right_feedback img:nth-child(2){
+    width: 100%;
+    height: 170px;
+  }
+  #right_feedback img:nth-child(3){
+    width: 100%;
+    height: 200px;
+  }
+}
+@media all and (min-width:821px) and (max-width: 999px){
+     /* ===================== some client feedback ===================  */
+  .feedback_hadeline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feedback{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: -20px;
+  }
+  #right_feedback{
+    align-content: center;
+  }
+  #right_feedback img:nth-child(1){
+    width: 100%;
+    height: 150px;
+  }
+  #right_feedback img:nth-child(2){
+    width: 100%;
+    height: 110px;
+  }
+  #right_feedback img:nth-child(3){
+    width: 100%;
+    height: 100px;
+  }
+}
+@media all and (min-width:1000px) and (max-width: 1200px){
+     /* ===================== some client feedback ===================  */
+  .feedback_hadeline{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .feedback{
+    width: 100%;
+    height: auto;
+    padding: 0 15px;
+    margin-bottom: -20px;
+  }
+  #right_feedback img:nth-child(1){
+    width: 100%;
+    height: 180px;
+  }
+  #right_feedback img:nth-child(2){
+    width: 100%;
+    height: 135px;
+  }
+  #right_feedback img:nth-child(3){
+    width: 100%;
+    height: 140px;
+  }
+}
