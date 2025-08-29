@@ -1,0 +1,1707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box; /* For older browsers */
+    -moz-box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+    scroll-behavior: smooth;
+}
+.header_hero_area{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(image/NIT-HOME.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    position: relative;
+    display: flex;
+    padding: 2% 4%;
+}
+.header nav {
+    flex-basis: 50%;
+}
+.header nav a {
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+.header nav h2 {
+    font-size: 20px;
+    line-height: 25px;
+}
+.header nav img {
+    width: 50px;
+    height: 50px;
+}
+.nav_links {
+    flex-basis: 50%;
+    text-align: right;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 2%;
+}
+.nav_links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.nav_links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+.text_area {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12%;
+    padding: 2% 4%;
+}
+.text_area h1 {
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+.text_area p {
+    font-size: 14px;
+    margin-bottom: 4%;
+}
+.text_area a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+    transition: 0.2s;
+}
+.text_area a:hover {
+    background: #f44336;
+    border: 1px solid #f44336;
+}
+.nav_links i {
+    display: none;
+}
+/*--------- Course ----------*/
+.course {
+    text-align: center;
+    margin-top: 4%;
+}
+.course h2 {
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+.course p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 1%;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+    margin: 3% 5%;
+}
+.course_col{
+    background: #fff3f3;
+    padding: 3% 2%;
+    border-radius: 2%;
+    transition: 0.3s;
+}
+.course_col p {
+    margin: 3% 0;
+    color: #777;
+    text-align: justify;
+}
+.course_col:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+/* ---------------campus------------ */
+.campus {
+    width: 93%;
+    margin: auto;
+    text-align: center;
+}
+.campus h2 {
+    font-size: 20px;
+}
+.campus p{
+    font-size: 14px;
+    color:#777;
+    margin-bottom: 4%;
+}
+.capmus_galley{
+    display: flex;
+    gap: 4%;
+    margin-bottom: 5%;
+}
+.campus_pic {
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
+}
+.campus_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+.campus_pic .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3%;
+    transition: 0.5s;
+}
+.campus_pic .layer h3 {
+    color: #fff;
+    font-weight: 300;
+    height: 100%;
+    font-size: 23px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,95%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.campus_pic .layer:hover{
+    background: rgba(244, 67, 54, 0.7);
+}
+.campus_pic .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+/* ------- facilities -------- */
+.facilities {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.facilities P {
+    width: 50%;
+    margin: auto;
+    font-size: 14px;
+    color: #777;
+}
+.facilities_img{
+    display: flex;
+    gap: 4%;
+    padding:4% 3%;
+}
+.facilities_showing{
+    flex-basis: 32%;
+}
+.facilities_showing img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    transition: 0.3s;
+}
+.facilities_showing img:hover{
+    transform: scale(1.05);
+}
+.facilities_showing p{
+    text-align: justify;
+    width: 80%;
+    transition: 0.3s;
+}
+.facilities_showing h4 {
+    transition: 0.3s;
+}
+.facilities_showing img:hover~h4,.facilities_showing img:hover~p{
+    transform: translateY(25px);
+}
+.facilities_btn {
+    margin-bottom: 8%;
+}
+
+/* --------------------- blog page call --------------------  */
+.blog_page {
+    display: grid;
+    grid-template-areas:"nth1 nth3" "nth2 nth3" ;
+    padding: 5%;
+    gap: 2%;
+}
+.blog_page_call:nth-child(1){
+    grid-area: nth1;
+}
+.blog_page_call:nth-child(2){
+    grid-area: nth2;
+}
+.blog_page_call:nth-child(3){
+    grid-area: nth3;
+}
+.blog_page_call img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 3% 0;
+    object-fit: cover;
+}
+.blogsss {
+    text-align: center;
+}
+.blogsss a {
+    color: #f44336;
+    text-decoration: none;
+    border-radius:10px ;
+    border: 1px solid #f44336;
+    padding:1% 2%;
+    transition: 0.3s;
+}
+.blogsss a:hover {
+    background: #f44336;
+    color: #fff;
+}
+
+
+/* ----------- testimonial ------------- */
+.testimonials {
+    text-align: center;
+    margin-top: 12%;
+}
+.testimonials h3 {
+    font-size: 35px;
+}
+.testimonials p {
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    color: #777;
+    margin-top: 1%;
+}
+.testimonial_alluser {
+    display: flex;
+    text-align: left;
+    gap: 2%;
+    margin: 2% 3%;
+}
+.testimonial_user{
+    flex-basis: 32%;
+    background-color: #fff3f3;
+    display: flex;
+    padding: 2% 1%;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+.testimonial_user img {
+    height:60px;
+    border-radius: 50%;
+    margin: 2%;
+    border: 2px solid #f44336;
+}
+.testimonial_user p {
+    margin: 0;
+    width: 95%;
+    text-align: justify;
+    padding: 2% 5%;
+    margin-bottom: 1%;
+}
+.testimonial_user .fa-solid {
+    color: #f44336;
+    font-size: 13px;
+}
+.testimonial_user:hover {
+    box-shadow:  0 0 20px 0 rgba(0,0,0,0.2);
+}
+/* -------- Call to action ----------- */
+.cta {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(image/NIT-cta.jpg);
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin:5% auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.cta h3 {
+    font-size: 30px;
+    color: #fff;
+    width: 45%;
+    margin: auto;
+    padding-top:3% ;
+    margin-bottom: 3%;
+}
+.cta a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 1% 1.5%;
+    transition: 0.2s;
+}
+.cta a:hover {
+    background: #f44336;
+    border: 1px solid #f44336;
+}
+/* --------- footer ------------ */
+.footer {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+.footer p {
+    color: #777;
+    font-size: 13px;
+}
+.footer .icons {
+    margin:1%;
+}
+.footer .icons i{
+    margin: 2%;
+    color: #f44336;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+}
+.footer .icons i:hover {
+    background: #f44336;
+    color: #fff;
+}
+.blank {
+    color: #f44336;
+    position: relative;
+}
+.full {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.blank:hover .full, .footer .p:hover .full{
+    opacity: 1;
+}
+.footer .p {
+    font-size: 14px;
+    margin-bottom: 10%;
+}
+
+
+/* ------------ about page style -------------- */
+.about_hero_area {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(image/NIT-about.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about_text{
+    margin-top: 0;
+}
+.about_text p {
+    width: 60%;
+    margin:0% auto 3%;
+}
+.about1 {
+    display: flex;
+    margin: 5% auto;
+    gap: 5%;
+    padding: 0 5%;
+}
+.about1 .about_us_img {
+    flex-basis: 45%;
+}
+.about1 .about_us_img img {
+    width: 100%;
+    object-fit: cover;
+}
+.about_us {
+    flex-basis: 55%;
+}
+.about_us p {
+    color: #777;
+    margin-top: 2%;
+    text-align: justify;
+}
+
+/* --------- about gellary -------------- */
+.gellary_header {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.gellary_header p, .gellary_text p {
+    color: #777;
+    font-size: 14px;
+}
+.main_gellary {
+    display: flex;
+    margin: 5% 0;
+}
+.gellary_text {
+    flex-basis: 60%;
+}
+.gellary_show {
+    display: flex;
+    width: 30%;
+    gap: 2%;
+    margin: 0 5% 5% 5%;
+    flex-basis: 40%;
+}
+.gellary {
+    margin: auto;
+    display: grid;
+    grid-template-areas: "child1 child2" "child1 child3";
+    gap: 3%;
+    margin-bottom: 8%;
+}
+.gellary2 {
+    margin: auto;
+    display: grid;
+    grid-template-areas: "child1 child1" "child2 child3";
+    gap: 3%;
+    margin-bottom: 8%;
+
+}
+.gellary2 img:nth-child(1){
+    grid-area: child1;
+}
+.gellary2 img:nth-child(2){
+    grid-area: child2;
+}
+.gellary2 img:nth-child(3){
+    grid-area: child3;
+}
+.gellary img:nth-child(1){
+    grid-area: child1;
+}
+.gellary img:nth-child(2){
+    grid-area: child2;
+}
+.gellary img:nth-child(3){
+    grid-area: child3;
+}
+.gellary img, .gellary2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gellary3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gellary_btn {
+    margin: 5% 0 ;
+    text-align: left;
+    padding: 0;
+}
+.gellary_btn a {
+    color: #f44336;
+    border: #f44336 1px solid;
+    font-size: 15px;
+}
+.gellary_btn a:hover {
+    color: #fff;
+}
+
+
+
+
+/* ------------- cuorse page ---------------- */
+.course_hero_area {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(image/NIT-course_background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.course_text p {
+    width: 80%;
+    color: #ccc;
+}
+.course_text h1 {
+    font-size: 50px;
+}
+.course_img {
+    display: flex;
+    width: 100%;
+    padding: 5%;
+}
+.course_header {
+    flex-basis: 70%;
+    padding:0 5%;
+    padding-right: 0;
+}
+.course_header ol {
+    margin-top: 3%;
+}
+.course_header ol li p, .course_header ol {
+    color: #777;
+    font-size: 15px;
+    text-align: justify;
+}
+.course_img img {
+    width: 500px;
+    flex-basis: 30%;
+    transition: 0.3s;
+}
+.course_img:hover img {
+    transform: scale(1.05);
+}
+.course_name {
+    margin-bottom: 5%;
+}
+.all_degree {
+    text-align: center;
+    width: 50%;
+    margin: 0 5% 2%;
+    text-align: justify;
+    background: #fff3f3;
+    padding: 2%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.all_degree:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.all_degree2 {
+    margin: 3% 40% 5%;
+}
+.degrees {
+    display: flex;
+    padding: 0 5%;
+}
+.degree_header {
+    flex-basis: 25%;
+}
+.degree_text{
+    flex-basis: 70%;
+    padding: 0 5%;
+}
+.degree_text2 {
+    padding-right: 0;
+    margin-left: 2%;
+}
+.degree_text ul li {
+    color: #777;
+    font-size: 14px;
+    margin-top: 1%;
+}
+.degrees img {
+    width: 100%;
+    transition: 0.3s;
+}
+.degrees:hover img {
+    transform: scale(1.1);
+}
+.degree_text h3 {
+    margin-bottom: 2%;
+}
+.last_section{
+    margin-bottom:5%;
+}
+.course_btn {
+    text-align: center;
+    margin-bottom: 20%;
+}
+.course_btn p{
+    color: #f44336;
+    margin-bottom: 2%;
+}
+
+/* --------------------------- blog page ---------------------------- */
+.blog_hero_area {
+background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/NIT-blog12.jpg);
+background-position: center;
+background-size: cover;
+width: 100%;
+min-height: 50vh;
+}
+.blog_text h1 {
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+}
+.blog_gellary {
+    margin-right: 4%;
+}
+.blog_gellary p {
+    text-align: justify;
+    margin-top: 2%;
+}
+.blog_gellary_header p {
+    text-align: justify;
+}
+.main_gellary {
+    margin-bottom: 0;
+}
+.blogger {
+    margin-bottom: 5%;
+}
+.blogger h2 {
+    text-align: center;
+}
+.blogger p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+.blog_post {
+    display: flex;
+    padding:1% 5%;
+    gap: 5%;
+}
+.left_side, .mid_side {
+    flex-basis:30%;
+}
+.left_side:hover img, .mid_side:hover img{
+    transform: scale(1.07);
+}
+.left_side img, .mid_side img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.left_side h3, .mid_side h3 {
+    margin-top: 5%;
+    padding: 0 5%;
+    text-align: center;
+}
+.left_side p, .mid_side p{
+    font-size: 14px;
+    color: #777;
+    text-align: justify;
+    padding: 0 5%;
+}
+.right_side {
+    flex-basis: 32%;
+}
+.right_side h3 {
+    text-align: center;
+    background: transparent;
+    color: #f44336;
+    border: 1px solid #f44336;
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.right_side div {
+    padding: 3%;
+    background: #fff3f3;
+    margin: 4% 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.right_side div:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.right_side:hover h3 {
+    transform: scale(1.1);
+    background: #f44336;
+    color: #fff;
+}
+.all_blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    padding:0 5%;
+    margin: 10% 0 8%;
+}
+.blogs {
+    background: #fff3f3;
+    padding: 10%;
+    border-radius: 30px;
+    height: 350px;
+}
+#more {
+    display: none;
+}
+.blogs p{
+    text-align: justify;
+    color: #777;
+    margin-top: 3%;
+}
+.blog_btn {
+    margin-top: 15%;
+}
+.blog_btn a{
+    padding: 3%;
+    font-size: 14px;
+}
+/* ------------- blog post comment ------------ */
+.Comment {
+    background: #fff3f3;
+    width: 60%;
+    margin:0 auto;
+    margin-bottom: 5%;
+    padding: 5%;
+    height: auto;
+    border-radius: 50px;
+}
+.form_div{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin: 2% 0;
+}
+.textarea {
+    height: 300px;
+    resize: none;
+}
+.text_area22 {
+    padding-top: 3%;
+    font-size: 14px;
+}
+.form_input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #f44336;
+    border-radius: 10px;
+    background: none;
+    z-index: 12;
+    padding-left: 5%;
+}
+.form_label {
+    position: absolute;
+    left: 25px;
+    top: 12px;
+    transition: 0.3s;
+    pointer-events: none;
+    z-index: 55;
+    font-size: 14px;
+    color: #f44336;
+}
+.form_input:focus + .form_label, .form_input:not(:placeholder-shown).form_input:not(:focus) + .form_label {
+    left:25px;
+    top: -12px;
+    background: #fff3f3;
+    padding: 0 2%;
+}
+.comment_btn {
+    padding:1% 5%;
+    background: none;
+    border: 1px solid #f44336;
+    color: #f44336;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.comment_btn:hover {
+    background: #f44336;
+    color: #fff;
+}
+.map {
+    width: 80%;
+    margin:3% auto;
+}
+.map iframe{
+    width: 100%;
+}
+
+
+/* ------------------------------ contact page ---------------------------- */
+
+.contact_hero_area {
+    background-image: linear-gradient(rgba(4,3,90,0.7),rgba(4,9,4,0.7)),url(image/NIT-contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contact_text h1 {
+    font-size: 40px;
+}
+.contact_text p {
+    width: 30%;
+}
+.info {
+    display: flex;
+    padding: 5%;
+    margin: auto;
+    gap: 5%;
+}
+.left_info {
+    flex-basis: 30%;
+    background: #fff3f3;
+    padding: 3%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.left_info .div {
+    display: flex;
+    gap: 5%;
+    margin: 10% auto;
+}
+.div span, .div ul li {
+    color: #777;
+}
+.social_icons {
+    color: #f44336;
+    margin-right: 10%;
+    margin-top: 10%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.social_icons:hover {
+    color: #fff;
+    background: #f44336;
+}
+
+.div h4 {
+    color: #000;
+}
+.contact_icon {
+    color: #f44336;
+}
+.left_info:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.right_info {
+    flex-basis: 70%;
+}
+.comment_btn {
+    cursor: pointer;
+}
+
+
+
+/* ----------------------------- contact form --------------- */
+.contact p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5%;
+}
+.form_input:focus + .contact_label, .form_input:not(:placeholder-shown).form_input:not(:focus) + .contact_label {
+    background: #fff;
+}
+
+/* ---------------------------- our office hour ------------------------ */
+.office_hours {
+    width: 80%;
+    margin:5% auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,3,90,0.7)),url(image/NIT-office_hour.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    color: #fff;
+    height: auto;
+    padding: 3% 0;
+    transition: 0.3s;
+}
+.office_hours:hover {
+    transform: scale(1.1);
+}
+.office_hours ul {
+    list-style: none;
+}
+.departments {
+    text-align: center;
+}
+.departments p {
+    color: #777;
+    font-size: 14px;
+}
+.department_contacts {
+    padding: 5%;
+    margin-bottom: 10%;
+}
+.department_contacts ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%; 
+}
+.department_contacts ul li {
+    margin: 1%;
+    background: #fff3f3;
+    list-style: none;
+    padding: 5%;
+    color: #777;
+    transition: 0.3s;
+}
+.department_contacts ul li:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.department_name{
+    color: #000;
+}
+.department_contacts ul li p {
+    color: #f44336;
+    cursor: pointer;
+}
+/* ------------------------------ FAQ section ---------------------  */
+.faq {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+}
+.faq_header h3 {
+    padding-left: 5%;
+}
+.faq-item {
+    margin-bottom:2%;
+    transition: 0.3s;
+}
+.faq-item:hover {
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.faq-item h4 {
+    background-color: #fff3f3;
+    padding: 1%;
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+.faq-item p {
+    display: none;
+    padding: 15px;
+    background-color: #fff3f3;
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+.active  {
+    background-color: #fff3f3;
+}
+
+/* ------------------------------ contact page cta ---------------- */
+.cta2 {
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(image/NIT-HOME.jpg);
+}
+.footer_a a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    margin-left: 3%;
+    transition: 0.2s;
+}
+.footer_a a:hover {
+    color: #f44336;
+}
+
+@media all and (max-width:700px){
+    .header nav {
+        flex-basis: 70%;
+    }
+    .header nav h2 {
+        font-size: 13px;
+        line-height:16px;
+        margin-left: -6%;
+    }
+    .header nav img {
+        width: 35px;
+        height: 35px;
+    }
+    .nav_links i {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+    }
+    #nav_links {
+        display: none;
+    }
+    .nav_links ul {
+        opacity:95% ;
+        background: #f44336;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        padding: 3% 4%;
+        transition: 0.7s;
+        text-shadow: 0px 0px 10px #fff;
+        z-index: 1000;
+    }
+    .nav_links ul li{
+        display: block;
+        margin: 25%;
+    }
+    .nav_links ul li a {
+        font-size: 14px;
+        color: #fff;
+    }
+    .text_area h1 {
+        font-size: 30px;
+        margin-bottom: 2%;
+    }
+    .text_area p {
+        font-size: 13px;
+        margin-bottom: 15%;
+    }
+    .text_area {
+        margin-top: 50%;
+    }
+    .text_area a {
+        padding: 3% 4%;
+    }
+    /*--------- Course ----------*/
+    .course{
+        margin-top: 8%;
+    }
+    .course h2 {
+        font-size: 20px;
+    }
+    .course p {
+        padding: 2% 10%;
+        word-break: break-all;
+    }
+    .row {
+        flex-direction: column;
+        padding:0 6%;
+        margin: 5%;
+    }
+    .course_col{
+        margin-top: 10%;
+        padding: 4% 5%;
+    }
+    .course_col h3 {
+        font-size: 15px;
+    }
+    .course_col p{
+        padding: 1%;
+    }
+    /* ---------------campus------------ */
+    .campus h2 {
+        font-size:15px ;
+        margin-top: 20%;
+    }
+    .campus p {
+        word-break: break-all;
+        text-align: start;
+        padding: 4%;
+    }
+    .capmus_galley {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .campus_pic{
+        margin-bottom: 5%;
+    }
+    .campus_pic .second_img {
+        height: 520.6px;
+    }
+    /* -------- facilities ---------- */
+    .facilities {
+        margin-top: 30%;
+    }
+    .facilities p {
+        width: 90%;
+        text-align: justify;
+    }
+    .facilities_img {
+        flex-direction: column;
+        padding: 4%;
+    }
+    .facilities_showing {
+        margin-bottom: 50%;
+    }
+    .facilities_showing img:nth-child(1) {
+        margin-top: 5%;
+    }
+    /* -------------------------- blog page call ------------------- */
+    .blog_page {
+        display: block;
+    }
+    .blog_page_call span, .blog_page_call p {
+        font-size: 14px;
+        color: #777;
+    }
+    .blogsss a {
+        font-size: 14px;
+        padding: 3% 8%;
+        border-radius: 7px;
+    }
+    .blogsss {
+        margin: 15% 0 40%;
+    }
+
+
+    /* -------------- testimonial ------------- */
+    .testimonials h3 {
+    font-size: 25px;
+    }
+    .testimonials p {
+        word-break: break-all;
+    }
+    .testimonial_alluser{
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .testimonial_user{
+        margin-bottom: 5%;
+        padding: 5% 0;
+    }
+    /* ------------- call to action -------  */
+    .cta {
+        width: 95%;
+        height: 200px;
+        margin-top: 20%;
+    }
+    .cta h3 {
+        width: 90%;
+        font-size: 20px;
+        padding-top: 7%;
+        margin-bottom: 5%;
+    }
+    /* ------------- footer ------------ */
+    .footer {
+        text-align: justify;
+        margin-top: 25%;
+    }
+    .footer .icons {
+        margin: 5% 0%;
+    }
+    .footer .icons i {
+        margin: 5%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .footer .p {
+        font-size: 12px;
+    }
+    /* --------------------------------- About page ------------------------------- */
+    .about_text {
+        margin-top: 15%;
+    }
+    .about_text p {
+        width: 95%;
+    }
+    .about1 {
+        flex-direction: column;
+        margin: 5% 0;
+    }
+    .about_us p {
+        font-size: 14px;
+        margin: 5% 0;
+    }
+    .about_us h2 {
+        font-size: 20px;
+    }
+    .main_gellary {
+        flex-direction: column;
+    }
+    .gellary_header, .gellary_text{
+        width: 90%;
+        margin: auto;
+    }
+    .gellary_header {
+        margin-top: 20%;
+    }
+    .gellary_header p, .gellary_text p{
+        text-align: justify;
+    }
+    .gellary_show {
+        width: 90%;
+    }
+    .gellary_btn {
+        margin-top: 10%;
+        text-align: center;
+    }
+    .gellary_btn a {
+        font-size: 13px;
+    }
+    /* --------------- course page --------------------- */
+    .course_text h1 {
+        font-size: 25px;
+    }
+    .course_text p {
+        text-align: justify;
+    }
+    .course_img {
+        flex-direction: column;
+    }
+    .course_img img {
+        width: 95%;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .course_header {
+        margin-top: 10%;
+    }
+    .course_header ol li p {
+        text-align: justify;
+    }
+    .all_degree {
+        width: 95%;
+        margin:10% auto;
+        padding: 5%;
+    }
+    .all_degree p {
+        font-size: 13px;
+    }
+    .all_degree h3 {
+        font-size: 16px;
+    }
+    .degrees {
+        flex-direction: column;
+    }
+    .degrees img {
+        border-radius: 20px;
+        margin: 8% 0;
+    }
+    .course_btn p{
+        margin-bottom: 4%;
+    }
+    /* ------------------ blog page ------------------  */
+    .blog_text h1 {
+        width: 95%;
+        font-size: 20px;
+    }
+    .gellary_btn {
+        margin: 20% auto;
+    }
+    .blogger {
+        width: 95%;
+        margin:5% auto;
+    }
+    .blogger h2 {
+        font-size: 20px;
+    }
+    .blogger p {
+        width: 95%;
+        text-align: justify;
+    }
+    .blog_post {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .blog_post p {
+        padding: 0;
+    }
+    .blog_post img {
+        border-radius: 10px;
+    }
+    .left_side,.mid_side, .right_side {
+        margin: 5% 0;
+    }
+    .right_side h3 {
+        font-size: 15px;
+    }
+    .right_side span {
+        font-size: 14px;
+    }
+    .all_blogs {
+        display: flex;
+        flex-direction: column;
+    }
+    .blogs {
+        margin-bottom: 5%;
+    }
+    .blogs span, .blogs p {
+        font-size: 14px;
+    }
+    .blog_btn {
+        text-align: left;
+        margin: 10% 0;
+    }
+    .Comment {
+        width: 95%;
+        border-radius: 10px;
+        margin-bottom: 25%;
+    }
+    .form_div, .comment_btn {
+        margin-top: 7%;
+    }
+    .comment_btn {
+        height: 40px;
+    }
+
+    /* ----------------- contact page ------------------ */
+    .contact_text h1 {
+        font-size: 25px;
+    }
+    .contact_text p {
+        color: #ccc;
+    }
+    .map {
+        width: 95%;
+        height:30vh;
+    }
+    .map iframe {
+        height: 100%;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .social_icons {
+        margin: 3%;
+    }
+    .left_info {
+        margin-bottom: 10%;
+    }
+    .office_hours {
+        width: 95%;
+        border-radius: 10px;
+    }
+    .office_hours p, .office_hours ul li {
+        font-size: 14px;
+        padding: 2%;
+    }
+    .department_contacts ul {
+        grid-template-columns: 1fr;
+        gap: 0.2%;
+    }
+    .faq_header {
+        margin-top: 50%;
+    }
+    .faq {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+.footer_a a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    margin-left: 3%;
+}
+.footer_a {
+    margin-bottom: 3%;
+}
+}
+@media all and (min-width:700px) and (max-width:1200px){
+    .nav_links i {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+    }
+        #nav_links {
+        display: none;
+    }
+    .nav_links ul {
+        opacity:95% ;
+        background: #f44336;
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        padding: 3% 4%;
+        transition: 0.7s;
+        text-shadow: 0px 0px 10px #fff;
+        z-index: 1000;
+    }
+    .nav_links ul li{
+        display: block;
+        margin: 25%;
+    }
+    .nav_links ul li a {
+        color: #fff;
+        font-size: 14px;
+    }
+    .text_area{
+        margin-top: 30%;
+    }
+    .text_area h1 {
+        font-size: 55px;
+        margin-bottom: 2%;
+    }
+    .text_area p {
+        font-size: 14px;
+        margin-bottom: 15%;
+    }
+    /*--------- Course ----------*/
+    .course h2 {
+        font-size: 20px;
+    }
+    .course p {
+        font-size: 13px;
+        width: 90%;
+        margin: auto;
+    }
+    .row {
+        margin:8% 3% 5%;
+    }
+    .course_col {
+        flex-basis: 31%;
+        align-items: center;
+        justify-content: center;
+    }
+    .course_col h3 {
+        font-size: 15px;
+    }
+    .course_col p {
+        font-size: 13px;
+        word-break: break-all;
+    }
+    /* ---------------campus------------ */
+    .campus {
+        width: 90%;
+        margin: auto;
+    }
+        /* -------- facilities ---------- */
+    .facilities {
+        margin:10% 0 20%;
+    }
+    .facilities p{
+        width: 90%;
+    }
+    .facilities_img {
+        width: 90%;
+        padding: 0%;
+        display: grid;
+        grid-template-areas: "first_child mid_child" "last_child last_child";
+        margin:4% auto;
+    }
+    .facilities_showing:nth-child(1){
+        grid-area: first_child;
+    }
+    .facilities_showing:nth-child(2){
+        grid-area: mid_child;
+    }
+    .facilities_showing:nth-child(3) {
+        margin-top:18%;
+        grid-area: last_child;
+    }
+    .facilities_showing img {
+        width: 100%;
+    }
+
+    /* ---------------------- blog page call ----------------  */
+    
+    .blogsss {
+        margin: 3% 0;
+    }
+    .blogsss a {
+        font-size: 14px;
+        padding: 2% 4%;
+        border-radius: 5px;
+    }
+        /* -------------- testimonial ------------- */
+        .testimonials {
+            margin-top: 25%;
+        }
+        .testimonials h3 {
+            font-size: 25px;
+        }
+        .testimonial_alluser {
+            display: block;
+            margin-top: 4%;
+        }
+        .testimonial_user{
+            margin-bottom: 3%;
+        }
+        /* --------- call to actioon ----------  */
+    .cta {
+        width: 95%;
+        margin-top: 10%;
+        height: 230px;
+    }
+    .cta h3 {
+        width: 80%;
+        padding-top: 5%;
+    }
+    /* ---------- footer ----------  */
+    .footer{
+        margin-top: 10%;
+    }
+    .footer p {
+        width: 95%;
+        text-align: justify;
+        margin: auto;
+        margin-top: 1%;
+    }
+    .footer .icons i {
+        margin: 7%;
+    }
+    .footer .p {
+        font-size: 12px;
+    }
+    /* ------------------------------- footer ----------------- */
+    .about_text {
+        margin: 15% auto;
+        width: 95%;
+        padding: 0;
+    }
+    .about_text p {
+        width: 80%;
+        margin-bottom: 10%;
+    }
+    .about_text h1 {
+        font-size: 35px;
+    }
+    .about1 {
+        flex-direction:column ;
+    }
+    .about_us p {
+        font-size: 14px;
+        margin-bottom: 5%;
+    }
+    .gellary_header  {
+        width: 90%;
+        margin-top: 15%;
+    }
+    .gellary_header p, .gellary_text p{
+        text-align: justify;
+    }
+    .gellary_show {
+        flex-basis: 35%;
+        margin-left: 0;
+    }
+    .main_gellary {
+        padding: 4%;
+        margin-top: 0;
+    }
+    .gellary_btn {
+        margin-top: 5%;
+    }
+
+    /* ---------- course page ------------- */
+        .course_img {
+        flex-direction: column;
+    }
+    .course_img img {
+        width: 100%;
+        margin: auto;
+    }
+    .course_header {
+        margin-top: 10%;
+    }
+    .course_header ol li p {
+        text-align: justify;
+    }
+    .all_degree {
+        width: 90%;
+        margin:5% auto;
+        padding: 3%;
+    }
+    .all_degree p {
+        font-size: 14px;
+    }
+    .degree_text {
+        text-align: justify;
+    }
+    .course_btn p{
+        margin-bottom: 3%;
+    }
+    /* ---------------- blog page -----------------  */
+    .blog_post {
+        display: grid;
+        grid-template-areas:"left_side mid_side" "right_side right_side" ;
+    }
+    .left_side{
+        grid-area: left_side;
+    }
+    .mid_side {
+        grid-area: mid_side;
+    }
+    .right_side {
+        grid-area: right_side;
+        margin-bottom: 15%;
+    }
+    .blogger {
+        width: 95%;
+    }
+    .blogger p {
+        width: 95%;
+    }
+    .all_blogs {
+        grid-template-columns: 1fr 1fr ;
+        margin-bottom: 50%;
+    }
+    .Comment {
+        width: 95%;
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
+    .new_testimonial {
+        margin-top: 10%;
+    }
+    .blog_text h1 {
+        width: 90%;
+    }
+
+    /* ----------------------- contact page ----------------------- */
+    .contact_hero_area {
+        height: 40vh;
+    }
+    .contact_text h1 {
+        font-size: 25px;
+    }
+    .contact_text p {
+        color: #ccc;
+    }
+    .map {
+        width: 95%;
+    }
+    .div span, .div ul li, div h4 {
+        font-size: 13px;
+    } 
+    .social_icons {
+        margin: 50% 0 0;
+    }
+    .form_div {
+        margin: 6% 0;
+    }
+    .office_hours {
+        width: 95%;
+        border-radius: 10px;
+    }
+    .department_contacts ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .department_contacts ul li {
+        word-break: break-all;
+    }
+    .faq_header {
+        margin-top: 50%;
+    }
+    .footer_a a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    margin-left: 3%;
+}
+}
+
+@media all and (min-width:1200px) and (max-width:1500px) {
+    .all_blogs {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 50%;
+        margin-bottom: 20%;
+    }
+    .blogs span, .blogs p {
+        font-size: 14px;
+    }
+    .Comment  {
+        height: 90vh;
+    }
+    .footer_a a{
+    text-decoration: none;
+    color: #777;
+    font-size: 13px;
+    margin-left: 3%;
+}
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-NIT-National Institute of Technology</title>
+                <!-- css file link  -->
+    <link rel="stylesheet" href="style.css">
+                <!-- favicon file  -->
+    <link rel="icon" type="image/x-icon" href="NIT - Fcvicon png.png">
+            <!-- font awesome virson 6.7.2 icon connect  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- google fonts- poppins cdn connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    
+</head>
+<body>
+    <div class="contact_hero_area">
+            <section class="header">
+                <nav>
+                    <a href="index.html">
+                        <img src="NIT - Fcvicon png.png" alt="University Logo">
+                        <h2>NATIONAL INSTITUTE<br>OF TECHNOLOGY</h2>
+                    </a>
+                </nav>
+                <div class="nav_links" >
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                    <ul id="nav_links">
+                        <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="Course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="text_area about_text contact_text">
+                <h1>Contact Us | National Institute of Technology</h1>
+                <p>We're here to help! Feel free to reach out to us with any questions or inquiries regarding admissions, programs, or
+                collaborations.</a>
+            </section>
+    </div>
+
+
+    <!-- -----------Contact page------------- -->
+    <section class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151676.7904377134!2d9.76301744261754!3d53.55866268474567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg%2C%20Germany!5e0!3m2!1sen!2sbd!4v1746079902537!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- ------------------------- contact info --------------------  -->
+    <section class="info">
+        <div class="left_info">
+            <div class="div">
+                <i class="fa-solid fa-map-location-dot contact_icon"></i>
+                <span>
+                    <h4>Address:</h4>
+                    National Institute of Technology (NIT)<br>
+                    Technologiepark 12<br>
+                    12345 Hamburg<br>
+                    Germany
+            </span>
+            </div>
+            <div class="div">
+                <i class="fa-solid fa-phone-volume contact_icon"></i>
+                <div>
+                    <h4>Phone Numbers:</h4>
+                    <ul>
+                        <li>General Inquiries: +49 30 12345678</li>
+                        <li>Admissions: +49 30 87654321</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="div">
+                <i class="fa-regular fa-envelope contact_icon"></i>
+                <div>
+                    <h4>Email Addresses:</h4>
+                    <ul>
+                        <li>General Inquiries: info@nit.edu</li>
+                        <li>Admissions: admissions@nit.edu</li>
+                        <li>Support: support@nit.edu</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook-f social_icons"></i>
+                <i class="fa-brands fa-twitter social_icons"></i>
+                <i class="fa-brands fa-instagram social_icons"></i>
+                <i class="fa-brands fa-linkedin social_icons"></i>
+            </div>
+        </div>
+        <div class="right_info">
+            <!-- ------------- contact form --------------------  -->
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>Welcome to the contact page of the National Institute of Technology. Whether you are inquiring about admissions, programs, research, or anything else, we are here to assist you.</p>
+                <form class="comment_box" action="form_handeler.php" method="post">
+                    <div class="form_div">
+                        <input type="text" name="name" placeholder="" class="form_input" required>
+                        <label for="" class="form_label contact_label">Full Name</label>
+                    </div>
+                    <div class="form_div">
+                        <input type="email" name="email" placeholder="" class="form_input" required>
+                        <label for="" class="form_label contact_label">Your Email</label>
+                    </div>
+                    <div class="form_div">
+                        <input type="text" name="subject" placeholder="" class="form_input" required>
+                        <label for="" class="form_label contact_label">Subject</label>
+                    </div>
+                    <div class="form_div textarea">
+                        <textarea name="massage" class="form_input textarea text_area22" placeholder="" required></textarea>
+                        <label for="" class="form_label contact_label">Please Type Your Message Here...</label>
+                    </div>
+                    <input type="submit" value="Send Message " class="comment_btn">
+                </form>
+            </div>
+        </div>
+    </section>
+<!-- ---------------------------- our office hour ------------------------  -->
+    <section class="office_hours">
+        <h3>Office Hours</h3>
+        <p>Our office is open Monday through Friday. Please feel free to contact us during the following hours</p>
+        <ul>
+            <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM (IST)</li>
+            <li><strong>Saturday:</strong> Closed</li>
+            <li><strong>Sunday:</strong> Closed</li>
+        </ul>
+    </section>
+
+    <!-- ------------ department contacts --------------  -->
+<div class="departments">
+    <h3>Department-specific Contacts</h3>
+    <p>If you have queries related to a specific department, please contact the relevant department below:</p>
+</div>
+    <section class="department_contacts">
+        <ul>
+            <li><strong class="department_name">Mathematics Department:</strong><p> math@nit.edu</p>
+                <br><strong>Support Email:</strong> math-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Maximilian Schmidt
+                <br><strong>Email:</strong> maximilian.schmidt@nit.edu
+                <br><strong>Phone:</strong> +49 30 12345678
+            </li>
+    
+            <li><strong class="department_name">Physics Department:</strong><p> physics@nit.edu</p>
+                <br><strong>Support Email:</strong> physics-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Anna Müller
+                <br><strong>Email:</strong> anna.mueller@nit.edu
+                <br><strong>Phone:</strong> +49 30 23456789
+            </li>
+    
+            <li><strong class="department_name">Chemistry Department:</strong> <p>chemistry@nit.edu</p>
+                <br><strong>Support Email:</strong> chemistry-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Lukas Weber
+                <br><strong>Email:</strong> lukas.weber@nit.edu
+                <br><strong>Phone:</strong> +49 30 34567890
+            </li>
+    
+            <li><strong class="department_name">Computer Science (Optional/Introductory):</strong><p> csintro@nit.edu</p>
+                <br><strong>Support Email:</strong> csintro-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Janine Fischer
+                <br><strong>Email:</strong> janine.fischer@nit.edu
+                <br><strong>Phone:</strong> +49 30 45678901
+            </li>
+    
+            <li><strong class="department_name">English Language & Communication Skills Department:</strong><p> english@nit.edu</p>
+                <br><strong>Support Email:</strong> english-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Stefan Becker
+                <br><strong>Email:</strong> stefan.becker@nit.edu
+                <br><strong>Phone:</strong> +49 30 56789012
+            </li>
+    
+            <li><strong class="department_name">Computer Science and Engineering (CSE):</strong><p> cse@nit.edu</p>
+                <br><strong>Support Email:</strong> cse-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Michael Schneider
+                <br><strong>Email:</strong> michael.schneider@nit.edu
+                <br><strong>Phone:</strong> +49 30 67890123
+            </li>
+    
+            <li><strong class="department_name">Civil Engineering Department:</strong><p> civil@nit.edu</p>
+                <br><strong>Support Email:</strong> civil-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Elisabeth Hoffmann
+                <br><strong>Email:</strong> elisabeth.hoffmann@nit.edu
+                <br><strong>Phone:</strong> +49 30 78901234
+            </li>
+    
+            <li><strong class="department_name">Mechanical Engineering Department:</strong> <p>mech@nit.edu</p>
+                <br><strong>Support Email:</strong> mech-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Klaus Müller
+                <br><strong>Email:</strong> klaus.mueller@nit.edu
+                <br><strong>Phone:</strong> +49 30 89012345
+            </li>
+    
+            <li><strong class="department_name">Electrical and Electronics Engineering (EEE):</strong> <p>eee@nit.edu</p>
+                <br><strong>Support Email:</strong> eee-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Ingrid Fischer
+                <br><strong>Email:</strong> ingrid.fischer@nit.edu
+                <br><strong>Phone:</strong> +49 30 90123456
+            </li>
+    
+            <li><strong class="department_name">Information Technology (IT) Department:</strong><p> it@nit.edu</p>
+                <br><strong>Support Email:</strong> it-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Tobias Klein
+                <br><strong>Email:</strong> tobias.klein@nit.edu
+                <br><strong>Phone:</strong> +49 30 01234567
+            </li>
+    
+            <li><strong class="department_name">Business Administration (BBA) Department:</strong><p> bba@nit.edu</p>
+                <br><strong>Support Email:</strong> bba-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Claudia Richter
+                <br><strong>Email:</strong> claudia.richter@nit.edu
+                <br><strong>Phone:</strong> +49 30 12345678
+            </li>
+    
+            <li><strong class="department_name">Applied Sciences (Physics, Chemistry, and Mathematics):</strong><p> appliedsciences@nit.edu</p>
+                <br><strong>Support Email:</strong> appliedsciences-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Oliver Braun
+                <br><strong>Email:</strong> oliver.braun@nit.edu
+                <br><strong>Phone:</strong> +49 30 23456789
+            </li>
+    
+            <li><strong class="department_name">M.Tech in Computer Science and Engineering:</strong><p> mtechcse@nit.edu</p>
+                <br><strong>Support Email:</strong> mtechcse-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Anja Becker
+                <br><strong>Email:</strong> anja.becker@nit.edu
+                <br><strong>Phone:</strong> +49 30 34567890
+            </li>
+    
+            <li><strong class="department_name">M.Tech in Civil Engineering:</strong><p> mtechcivil@nit.edu</p>
+                <br><strong>Support Email:</strong> mtechcivil-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Thomas Wagner
+                <br><strong>Email:</strong> thomas.wagner@nit.edu
+                <br><strong>Phone:</strong> +49 30 45678901
+            </li>
+    
+            <li><strong class="department_name">M.Tech in Mechanical Engineering:</strong><p> mtechmech@nit.edu</p>
+                <br><strong>Support Email:</strong> mtechmech-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Susanne Fischer
+                <br><strong>Email:</strong> susanne.fischer@nit.edu
+                <br><strong>Phone:</strong> +49 30 56789012
+            </li>
+    
+            <li><strong class="department_name">M.Sc. in Data Science:</strong><p> mscdatascience@nit.edu</p>
+                <br><strong>Support Email:</strong> mscdatascience-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Frank Weber
+                <br><strong>Email:</strong> frank.weber@nit.edu
+                <br><strong>Phone:</strong> +49 30 67890123
+            </li>
+    
+            <li><strong class="department_name">English Language & Communication Skills (M.Sc.):</strong><p> mscenglish@nit.edu</p>
+                <br><strong>Support Email:</strong> mscenglish-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Ingrid Müller
+                <br><strong>Email:</strong> ingrid.mueller@nit.edu
+                <br><strong>Phone:</strong> +49 30 78901234
+            </li>
+    
+            <li><strong class="department_name">M.Sc. in Applied Physics/Chemistry/Mathematics:</strong><p> mscappliedsciences@nit.edu</p>
+                <br><strong>Support Email:</strong> mscappliedsciences-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Rainer Schmidt
+                <br><strong>Email:</strong> rainer.schmidt@nit.edu
+                <br><strong>Phone:</strong> +49 30 89012345
+            </li>
+    
+            <li><strong class="department_name">M.Tech in Artificial Intelligence and Machine Learning:</strong><p> mtechai@nit.edu</p>
+                <br><strong>Support Email:</strong> mtechai-support@nit.edu
+                <br><strong>Professor:</strong> Prof. Dr. Lara Fischer
+                <br><strong>Email:</strong> lara.fischer@nit.edu
+                <br><strong>Phone:</strong> +49 30 90123456
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ------------------- FAQ section ------------------  -->
+<div class="faq_header">
+    <h3>Frequently Asked Questions</h3>
+</div>
+<section class="faq">
+    <section>
+            <div class="faq-item">
+                <h4>1. What programs does the National Institute of Technology offer? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>Our institute offers a wide range of undergraduate, postgraduate, and doctoral programs. These include
+                    Bachelor's degrees in various engineering disciplines, as well as Master's programs in specialized fields
+                    such as Artificial Intelligence, Data Science, Civil Engineering, and more. For a complete list of all the
+                    programs offered, please refer to the <a href="explore.html">Programs Page</a>.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>2. How can I apply for admission? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>To apply for admission to our institute, you can visit our <a href="contact.html">Admissions Page</a>
+                    where you'll find detailed instructions on eligibility, the application process, and important deadlines.
+                    Make sure to have all your documents ready before applying.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>3. What is the fee structure for undergraduate and postgraduate programs? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>The fee structure varies depending on the program. You can find detailed fee information for both
+                    undergraduate and postgraduate programs on the <a href="contact.html">Fee Structure Page</a>. We also offer
+                    information on available scholarships and financial aid options.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>4. What are the eligibility requirements for the M.Tech programs? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>Eligibility requirements for M.Tech programs typically include a Bachelor's degree in a relevant field with a
+                    minimum GPA. Specific details for each M.Tech program, including the required qualifications, are available
+                    on the <a href="Course.html">M.Tech Eligibility Page</a>.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>5. Can international students apply to your programs? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>Yes, we welcome applications from international students. The process and requirements are slightly
+                    different, and you can find more information on the <a href="contact.html">International
+                        Admissions Page</a>.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>6. How can I contact the departments for specific queries? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>For department-specific inquiries, you can visit the <a href="contact.html">Contact Us Page</a> to find the
+                    email addresses and phone numbers for each department. You can also reach out directly to faculty members
+                    for academic questions.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>7. What are the campus facilities available? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>Our campus offers modern facilities, including state-of-the-art laboratories, libraries, hostels, sports
+                    facilities, and a cafeteria. You can learn more about the campus amenities on our <a
+                        href="facilities.html">Campus Facilities Page</a>.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h4>8. Are there any extracurricular activities or student clubs? <i class="fa-solid fa-caret-down"></i></h4>
+                <p>Yes, we have a vibrant student life with numerous clubs and extracurricular activities ranging from sports,
+                    music, dance, and drama to technical and cultural clubs. To know more about student activities, please refer
+                    to the <a href="blog_post.html">Student Life Page</a>.</p>
+            </div>
+    </section>
+    <section>
+        <div class="faq-item">
+            <h4>9. What scholarships and financial aid options are available? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>We offer a variety of scholarships based on merit, need, and other criteria. For detailed information on
+                scholarships, including eligibility and how to apply, visit our <a href="Course.html">Scholarships
+                    Page</a>.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>10. How can I visit the campus or schedule a campus tour? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>We offer campus tours for prospective students and parents. You can book a campus tour by visiting our <a
+                    href="blog_post.html">Campus Tour Page</a> or by contacting our admissions team.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>11. Where can I find the contact details for faculty members? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>You can find the contact details of our faculty members, including their email addresses and phone numbers,
+                on the <a href="facilities.html">Faculty Page</a>.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>12. What is the process for getting an internship? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>Internships are a key part of our curriculum. Our Career Services department works closely with industries to
+                help students secure internships. More information on how to apply for internships is available on the <a
+                    href="explore.html">Internships Page</a>.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>13. What is the student-to-faculty ratio? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>We maintain a low student-to-faculty ratio to ensure personalized attention for each student. The average
+                ratio is approximately 15:1, depending on the department and program.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>14. How can I get more information about campus life? <i class="fa-solid fa-caret-down"></i></h4>
+            <p>To learn more about the daily life on campus, including hostels, events, and student experiences, you can
+                visit our <a href="blog_post.html">Campus Life Page</a>.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>15. Where can I find updates about events and announcements? <i class="fa-solid fa-caret-down"></i> </h4>
+            <p>For the latest news, events, and announcements, please visit our <a href="explore.html">News Page</a> where we
+                regularly post updates related to the campus and institute.</p>
+        </div>
+
+    </section>
+</section>
+
+    <!-- -------------- Call To Action ----------  -->
+    <section class="cta cta2">
+        <h3>Enroll For Our Various Online Courses Anywhere Form The World</h3>
+        <a href="Course.html">Visit us to know more</a>
+    </section>
+
+    <!-- ---------- Footer ------------ -->
+    
+<section class="footer">
+        <h4>About Us</h4>
+        <p>National Institute of Technology (NIT) is a premier institution dedicated to excellence in engineering, technology, and research. We offer cutting-edge academic programs designed to equip students with the skills needed for the global workforce. With a focus on innovation and hands-on learning, NIT fosters a dynamic and inclusive campus culture. Our highly qualified faculty and state-of-the-art facilities ensure a world-class education. NIT is committed to shaping the leaders of tomorrow through academic rigor and industry partnerships.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="footer_a">
+            <a href="Privacy-Policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms Of Service</a>
+            <a href="cookie.html">Cookie Policy</a>
+        </div>
+        <p class="p"> © At NIT, we believe in fostering integrity, innovation, and a commitment to excellence in all aspects of life. <i class="fa-regular fa-heart blank"><i class="fa-solid fa-heart full"></i></i></p>
+</section>
+
+    <script src="app.js"></script>
+</body>
+</html>

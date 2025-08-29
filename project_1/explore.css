@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+    -webkit-box-sizing: border-box; /* For older browsers */
+    -moz-box-sizing: border-box;
+}
+.explore_hero_area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(image/NIT-explore_header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 55vh;
+}
+.explore_text h1 {
+    font-size: 35px;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 4px;
+    background-color:#f44336;
+    margin: 15px auto;
+}
+
+/* ----------- NIT about section -------------- */
+.section {
+    padding: 5%;
+    padding-bottom: 0;
+    margin-bottom: 2%;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 2%;
+}     
+.about-text {
+    flex-basis: 70%;
+}
+.about-image {
+    flex-basis: 30%;
+}
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+.highlight-list {
+    margin: 20px 0;
+}
+.highlight-item {
+    display: block;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+.highlight-item i {
+    color: #f44336;
+    margin-right: 1%;
+    font-size: 20px;
+}
+.explore_btn {
+    color: #f44336;
+    text-decoration: none;
+    border: 1px solid #f44336;
+    padding: 1%;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.explore_btn:hover {
+    background: #f44336;
+    color: #fff;
+}
+/* ------------------------------ Academic section -------------------------  */
+.academic1 {
+    width: 80%;
+    margin: auto;
+}
+.departments {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2%;
+    margin-bottom: 7%;
+}
+.department-card {
+    background : #fff3f3 ;
+    border-radius: 10px;
+    padding: 8%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #f44336;
+    margin-top: 6%;
+}
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.department-card h3 {
+    color: #f44336 ;
+    margin-bottom: 5%;
+}
+.academic_p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 3%;
+}
+
+
+/* --------------------- Research Section ---------------------  */
+.research_section {
+    background: #f8f9fa;
+    width: 80%;
+    margin:10% auto;
+    height: auto;
+    border: 1px solid #777;
+    border-radius: 30px;
+}
+.research-areas {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    margin-bottom: 5%;
+}
+.research-item {
+    background: #fff3f3;
+    padding: 2% 1%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #777;
+}
+.research-item i {
+    font-size: 30px;
+    color: #f44336 ;
+    margin-bottom:5% ;
+}
+.btn2 {
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+.btn2:hover {
+    border: none;
+}
+/* ------------------ Campus Life Section ----------------------- */
+.campus-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    margin: auto;
+    margin: auto;
+    height: 40vh;
+}
+.highlight-card {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 20px;
+}
+.highlight-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.highlight-card:hover img {
+    transform: scale(1.1);
+}
+.highlight-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: #fff ;
+    padding: 20px;
+}
+.btn3 {
+    text-align: center;
+}
+@media all and (max-width:700px) {
+    .section-title::after {
+        width: 30%;
+    }
+    .about-content {
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+    .about-text p {
+        font-size: 14px;
+    }
+    .highlight-item i{
+        font-size: 16px;
+    }
+    .highlight-item  {
+        font-size: 14px;
+    }
+    .explore_btn {
+        padding: 3%;
+    }
+    .button {
+        text-align: center;
+    }
+    .academic1 {
+        width: 95%;
+        height: auto;
+    }
+    .departments {
+        margin-bottom: 50%;
+    }
+    .research_section {
+        width: 95%;
+        height: auto;
+    }
+    .research-areas {
+        flex-direction: column;
+    }
+    .research-item {
+        margin: 2% 0;
+        padding: 6% 3%;
+    }
+    #campus-life {
+        height: auto;
+    }
+    .campus-highlights {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-bottom: 20%;
+    }
+    .highlight-card {
+        margin: 3%;
+    }
+    #admissions {
+        margin-top: 10%;
+    }
+}
+@media all and (min-width:700px) and (max-width:1200px){
+    .about-content, .highlight-item i  {
+        align-items: normal;
+        font-size: 14px;
+    }
+    .about-text {
+        flex-basis: 55%;
+    }
+    .about-image {
+        flex-basis: 45%;
+    }
+    .academic1 {
+        width: 95%;
+        padding:0 2% ;
+        margin-top: 15%;
+    }
+    .research_section {
+        width: 95%;
+        height: auto;
+    }
+    .research-areas {
+        display: block;
+    }
+    .research-item {
+        margin: 2%;
+    }
+    .campus-highlights {
+        height: auto;
+        margin-bottom: 10%;
+    }
+}

@@ -1,0 +1,195 @@
+#facilities {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+}
+.facilities_hero_area {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/NIT-blog5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+
+.facilities-section h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+}
+.facilities-section p{
+    color: #777;
+    width: 50%;
+    margin: 0 auto 4%;
+}
+
+.facility-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.facility-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.facility-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.facility-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.facility-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.facility-text h3 {
+    font-size:25px;
+    color: #f44336;
+    margin-bottom: 15px;
+}
+
+.facility-text p {
+    color: #777;
+    text-align: justify;
+    font-size: 15px;
+    width: 100%;
+}
+
+.extra-facilities {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 15%;
+}
+.extra-facility img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 4% 0 10%;
+}
+
+.extra-facility {
+    padding: 20px;
+    margin: 0 10px 0%;
+    background-color: #fff3f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height:auto;
+}
+
+.extra-facility h3 {
+    font-size: 25px;
+    color: #f44336;
+    margin-bottom: 2%;
+}
+
+.extra-facility p {
+    font-size: 1em;
+    color: #777;
+    width: 100%;
+    text-align: justify;
+}
+.facilities_btn {
+    color: #f44336;
+    text-decoration: none;
+    border: 1px solid #f44336;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.facilities_btn:hover {
+    color: #fff;
+    background: #f44336;
+}
+.footer p{
+    width: 95%;
+}
+
+@media all and (max-width:700px) {
+    #facilities {
+        width: 100%;
+        padding: 0;
+    }
+    #facilities p{
+        width: 90%;
+        text-align: justify;
+    }
+    #facilities h2 {
+        margin: 5% ;
+        font-size: 23px;
+    }
+    .reverse {
+        display: block;
+    }
+    .facility-item {
+        flex-direction: column;
+    }
+    .facility-text p {
+        font-size: 14px;
+    }
+    .extra-facilities{
+        flex-direction: column;
+        background: #fff3f3;
+    }
+    .extra-facility {
+        padding: 0%;
+        margin:5% 0 ; 
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+    .extra-facility img, .extra-facility h3 {
+        padding: 5%;
+        margin-bottom: 0%;
+    }
+    .extra-facility p {
+        font-size: 14px;
+    }
+    .facilities_btn {
+        margin-left: 5%;
+    }
+}
+@media all and (min-width:700px) and (max-width:1200px){
+    #facilities {
+        width: 100%;
+        padding: 0;
+    }
+    #facilities p{
+        width: 90%;
+        text-align: justify;
+    }
+    #facilities h2 {
+        margin: 2% ;
+        font-size: 23px;
+    }
+        .reverse {
+        display: block;
+    }
+    .facility-item {
+        flex-direction: column;
+    }
+    .facility-text p {
+        font-size: 14px;
+    }
+    .extra-facilities{
+        flex-direction: column;
+        background: #fff3f3;
+    }
+    .extra-facility {
+        margin: 5% 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+        .extra-facility p {
+        font-size: 14px;
+    }
+}
